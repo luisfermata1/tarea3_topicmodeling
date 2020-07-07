@@ -109,8 +109,4 @@ coherence_model_lda = CoherenceModel(model=lda_model, texts=data_lemmatized, dic
 coherence_lda = coherence_model_lda.get_coherence()
 print('\nCoherence Score: ', coherence_lda)
 
-# Visualizamos los temas
-#pyLDAvis.enable_notebook()
-#vis = pyLDAvis.gensim.prepare(lda_model, corpus, id2word)
-#vis
 
