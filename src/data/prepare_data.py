@@ -3,7 +3,7 @@ import pandas as pd
 
 
 def read_data() -> list:
-    df = pd.read_csv('../../data/raw/reviews.csv')
+    df = pd.read_json('../../data/raw/newsgroups.json')
 
     # Convertir a una lista
     data = df.content.values.tolist()
